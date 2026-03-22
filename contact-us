@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - AG Software House</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-flex">
+    <h2 class="logo">AG Software</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="software.html">Software</a>
+      <a href="web.html">Web</a>
+      <a href="seo.html">SEO</a>
+      <a href="project.html">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h1>Contact Us</h1>
+  <p>If you have any questions or want to work with us, feel free to contact us.</p>
+
+  <div class="grid-2">
+    
+    <div class="card">
+      <h3>Email</h3>
+      <p>info@agsoftwarehouse.com</p>
+    </div>
+
+    <div class="card">
+      <h3>Location</h3>
+      <p>Pakistan</p>
+    </div>
+
+    <div class="card">
+      <h3>WhatsApp</h3>
+      <p>+92-XXXXXXXXXX</p>
+    </div>
+
+    <div class="card">
+      <h3>Business Hours</h3>
+      <p>Mon - Sat: 9 AM - 6 PM</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 AG Software House. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
