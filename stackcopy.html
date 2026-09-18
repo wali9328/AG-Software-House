@@ -25,11 +25,11 @@ content="width=device-width, initial-scale=1.0"
       box-sizing: border-box;
     }
 
-   body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #071a33;
-    color: #ffffff;
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #071a33;
+      color: #ffffff;
     }
 
     .top-bar {
@@ -146,6 +146,121 @@ content="width=device-width, initial-scale=1.0"
       font-size: 13px;
     }
 
+    /* ================================
+       BROWSER STORE SECTION
+       ================================ */
+
+    .store-section {
+      max-width: 850px;
+      margin: 0 auto 45px;
+      background: #fff;
+      border-radius: 14px;
+      padding: 35px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .store-section h2 {
+      margin: 0 0 10px;
+      color: #111;
+      font-size: 30px;
+    }
+
+    .store-intro {
+      margin: 0 auto 28px;
+      max-width: 650px;
+      color: #666;
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .store-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .store-card {
+      background: #f8fafc;
+      border: 1px solid #edf0f2;
+      border-radius: 12px;
+      padding: 22px 18px;
+      text-align: center;
+      transition: all 0.2s ease;
+    }
+
+    .store-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .store-icon {
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .store-card h3 {
+      margin: 5px 0 7px;
+      color: #222;
+      font-size: 18px;
+    }
+
+    .store-card p {
+      margin: 0 0 15px;
+      color: #777;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .store-status {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      margin-bottom: 14px;
+    }
+
+    .available {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    .pending {
+      background: #fef3c7;
+      color: #92400e;
+    }
+
+    .store-btn {
+      display: inline-block;
+      width: 100%;
+      padding: 11px 15px;
+      border-radius: 7px;
+      background: #0288d1;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .store-btn:hover {
+      background: #0277bd;
+      transform: translateY(-1px);
+    }
+
+    .store-btn.pending-btn {
+      background: #94a3b8;
+      cursor: default;
+    }
+
+    .store-btn.pending-btn:hover {
+      background: #94a3b8;
+      transform: none;
+    }
+
     .details {
       background: #fff;
       border-radius: 14px;
@@ -248,22 +363,22 @@ content="width=device-width, initial-scale=1.0"
     }
 
     .stackcopy-highlight {
-  margin: 30px 0;
-  padding: 25px 30px;
-  background: #f0fdf4;
-  border-left: 5px solid #16a34a;
-  border-radius: 10px;
-}
+      margin: 30px 0;
+      padding: 25px 30px;
+      background: #f0fdf4;
+      border-left: 5px solid #16a34a;
+      border-radius: 10px;
+    }
 
-.stackcopy-highlight h3 {
-  margin: 0 0 10px;
-  color: #15803d;
-  font-size: 24px;
-}
+    .stackcopy-highlight h3 {
+      margin: 0 0 10px;
+      color: #15803d;
+      font-size: 24px;
+    }
 
-.stackcopy-highlight p {
-  margin: 0;
-}
+    .stackcopy-highlight p {
+      margin: 0;
+    }
 
     @media (max-width: 700px) {
 
@@ -279,8 +394,16 @@ content="width=device-width, initial-scale=1.0"
         grid-template-columns: 1fr;
       }
 
+      .store-grid {
+        grid-template-columns: 1fr;
+      }
+
       .details {
         padding: 25px;
+      }
+
+      .store-section {
+        padding: 25px 18px;
       }
 
       .image-card {
@@ -314,7 +437,9 @@ class="back-link"
 
 >
 
+```
 ← Back to AG Software House
+```
 
   </a>
 
@@ -333,10 +458,10 @@ class="back-link"
   </h1>
 
   <p class="intro">
-    Stop losing copied content every time you copy something new. 
-    StackCopy is a lightning-fast, distraction-free multi-clipboard 
-    built directly for your browser, letting you stack dozens 
-    of text fragments and images in one organized floating dashboard. 
+    Stop losing copied content every time you copy something new.
+    StackCopy is a lightning-fast, distraction-free multi-clipboard
+    built directly for your browser, letting you stack dozens
+    of text fragments and images in one organized floating dashboard.
     Copy more, switch less, and keep your workflow moving.
   </p>
 
@@ -344,6 +469,7 @@ class="back-link"
 
   <div class="action-buttons">
 
+```
 <!-- GitHub ZIP Download -->
 
 <a
@@ -353,7 +479,6 @@ class="back-link"
 >
   ⬇ Download Extension
 </a>
-
 
 <!-- Lemon Squeezy License -->
 
@@ -365,6 +490,7 @@ class="back-link"
 >
   🔑 Get License Key
 </a>
+```
 
   </div>
 
@@ -372,6 +498,7 @@ class="back-link"
 
   <div class="image-card">
 
+```
 <img
   src="StackCopy The Multi-Item Clipboard.png"
   alt="StackCopy Browser Extension"
@@ -380,126 +507,274 @@ class="back-link"
 <p class="image-caption">
   StackCopy Browser Extension
 </p>
+```
 
   </div>
+
+  <!-- BROWSER STORE SECTION -->
+
+  <section class="store-section">
+
+```
+<h2>
+  Available on Your Favorite Browsers
+</h2>
+
+<p class="store-intro">
+  StackCopy is available through the official extension stores
+  of major browsers. Choose your browser below to install or
+  learn more about StackCopy.
+</p>
+
+<div class="store-grid">
+
+  <!-- GOOGLE CHROME -->
+
+  <div class="store-card">
+
+    <div class="store-icon">🌐</div>
+
+    <h3>
+      Google Chrome
+    </h3>
+
+    <p>
+      Install StackCopy directly from the official
+      Chrome Web Store.
+    </p>
+
+    <span class="store-status available">
+      ✓ Available
+    </span>
+
+    <a
+      href="YOUR_CHROME_STORE_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="store-btn"
+    >
+      Install on Chrome
+    </a>
+
+  </div>
+
+
+  <!-- MOZILLA FIREFOX -->
+
+  <div class="store-card">
+
+    <div class="store-icon">🦊</div>
+
+    <h3>
+      Mozilla Firefox
+    </h3>
+
+    <p>
+      Get StackCopy from the official Firefox
+      Add-ons marketplace.
+    </p>
+
+    <span class="store-status available">
+      ✓ Available
+    </span>
+
+    <a
+      href="YOUR_FIREFOX_ADDONS_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="store-btn"
+    >
+      Install on Firefox
+    </a>
+
+  </div>
+
+
+  <!-- MICROSOFT EDGE -->
+
+  <div class="store-card">
+
+    <div class="store-icon">🔷</div>
+
+    <h3>
+      Microsoft Edge
+    </h3>
+
+    <p>
+      Install StackCopy from the official Microsoft
+      Edge Add-ons store.
+    </p>
+
+    <span class="store-status available">
+      ✓ Available
+    </span>
+
+    <a
+      href="YOUR_EDGE_ADDONS_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="store-btn"
+    >
+      Install on Edge
+    </a>
+
+  </div>
+
+
+  <!-- OPERA -->
+
+  <div class="store-card">
+
+    <div class="store-icon">🔴</div>
+
+    <h3>
+      Opera Browser
+    </h3>
+
+    <p>
+      StackCopy is currently being reviewed by the
+      Opera Add-ons team.
+    </p>
+
+    <span class="store-status pending">
+      ⏳ Review Pending
+    </span>
+
+    <a
+      href="YOUR_OPERA_ADDONS_LINK"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="store-btn pending-btn"
+    >
+      Coming Soon
+
+    </a>
+
+  </div>
+
+</div>
+```
+
+  </section>
 
   <!-- PRODUCT DETAILS -->
 
   <section class="details">
 
-  <h2>
-    About StackCopy
-  </h2>
-
-  <p>
-    Stop switching browser tabs 50 times just to copy and paste
-    data entry points one by one.
-  </p>
-
-  <p>
-    The standard browser clipboard is a productivity trap. The
-    moment you highlight and copy a new sentence, your previous
-    copy vanishes into thin air. It breaks your concentration,
-    wastes hours of manual labor, and makes online research a
-    painful chore.
-  </p>
-
-  <p>
-    Generic "free" clipboard managers claim to solve this—but
-    at what cost? Most free tools quietly track your keystrokes,
-    log your browsing history, and sell your private data to
-    advertising corporations. Every time you copy a password,
-    a client's email, or private financial records, you are exposed.
-  </p>
-
-  <div class="stackcopy-highlight">
-
-<h3>
-  StackCopy changes everything.
-</h3>
+```
+<h2>
+  About StackCopy
+</h2>
 
 <p>
-  StackCopy is a lightning-fast, distraction-free
-  multi-clipboard built directly for your browser. It lets
-  you stack dozens of text fragments and raw image pixels
-  into one organized, floating dashboard using simple
-  shortcuts.
+  Stop switching browser tabs 50 times just to copy and paste
+  data entry points one by one.
 </p>
 
-  </div>
-
-  <div class="features">
-
-<div class="feature">
-  <strong>⚡ Lightning Fast</strong>
-  <span>
-    Capture multiple pieces of content without constantly
-    switching between tabs and applications.
-  </span>
-</div>
-
-<div class="feature">
-  <strong>📋 Multi-Clipboard</strong>
-  <span>
-    Stack dozens of copied text fragments instead of losing
-    your previous clipboard item.
-  </span>
-</div>
-
-<div class="feature">
-  <strong>🖼 Text & Images</strong>
-  <span>
-    Store text fragments and raw image pixels together in
-    one organized dashboard.
-  </span>
-</div>
-
-<div class="feature">
-  <strong>🎯 Distraction-Free</strong>
-  <span>
-    Stay focused on your research and data-entry workflow
-    without repeatedly jumping between tabs.
-  </span>
-</div>
-
-<div class="feature">
-  <strong>🔒 Privacy Focused</strong>
-  <span>
-    StackCopy is designed around a privacy-first workflow,
-    keeping your copied information under your control.
-  </span>
-</div>
-
-<div class="feature">
-  <strong>⌨️ Simple Shortcuts</strong>
-  <span>
-    Quickly capture and organize content using convenient
-    keyboard shortcuts.
-  </span>
-</div>
-
-  </div>
-
-  <div class="pricing">
-
-<h3>
-  Premium License
-</h3>
-
-<div class="price">
-  $9.99
-  <small>one-time payment</small>
-</div>
-
-<p class="license-note">
-  Purchase your lifetime license through Lemon Squeezy.
+<p>
+  The standard browser clipboard is a productivity trap. The
+  moment you highlight and copy a new sentence, your previous
+  copy vanishes into thin air. It breaks your concentration,
+  wastes hours of manual labor, and makes online research a
+  painful chore.
 </p>
 
+<p>
+  Generic "free" clipboard managers claim to solve this—but
+  at what cost? Most free tools quietly track your keystrokes,
+  log your browsing history, and sell your private data to
+  advertising corporations. Every time you copy a password,
+  a client's email, or private financial records, you are exposed.
+</p>
+
+<div class="stackcopy-highlight">
+
+  <h3>
+    StackCopy changes everything.
+  </h3>
+
+  <p>
+    StackCopy is a lightning-fast, distraction-free
+    multi-clipboard built directly for your browser. It lets
+    you stack dozens of text fragments and raw image pixels
+    into one organized, floating dashboard using simple
+    shortcuts.
+  </p>
+
+</div>
+
+<div class="features">
+
+  <div class="feature">
+    <strong>⚡ Lightning Fast</strong>
+    <span>
+      Capture multiple pieces of content without constantly
+      switching between tabs and applications.
+    </span>
   </div>
 
-</section>
+  <div class="feature">
+    <strong>📋 Multi-Clipboard</strong>
+    <span>
+      Stack dozens of copied text fragments instead of losing
+      your previous clipboard item.
+    </span>
+  </div>
 
- 
+  <div class="feature">
+    <strong>🖼 Text & Images</strong>
+    <span>
+      Store text fragments and raw image pixels together in
+      one organized dashboard.
+    </span>
+  </div>
+
+  <div class="feature">
+    <strong>🎯 Distraction-Free</strong>
+    <span>
+      Stay focused on your research and data-entry workflow
+      without repeatedly jumping between tabs.
+    </span>
+  </div>
+
+  <div class="feature">
+    <strong>🔒 Privacy Focused</strong>
+    <span>
+      StackCopy is designed around a privacy-first workflow,
+      keeping your copied information under your control.
+    </span>
+  </div>
+
+  <div class="feature">
+    <strong>⌨️ Simple Shortcuts</strong>
+    <span>
+      Quickly capture and organize content using convenient
+      keyboard shortcuts.
+    </span>
+  </div>
+
+</div>
+
+<div class="pricing">
+
+  <h3>
+    Premium License
+  </h3>
+
+  <div class="price">
+    $9.99
+    <small>one-time payment</small>
+  </div>
+
+  <p class="license-note">
+    Purchase your lifetime license through Lemon Squeezy.
+  </p>
+
+</div>
+```
+
+  </section>
+
 </main>
 
 <!-- FOOTER -->
@@ -512,6 +787,7 @@ class="back-link"
 
   <div>
 
+```
 <a
   href="https://sites.google.com/view/agsoftwarehouse-privacy-policy/home"
   target="_blank"
